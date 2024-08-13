@@ -20,7 +20,9 @@ export function isFileOnPath({
 
   const absolutePathToStrictFiles = getAbsolutePath(projectPath, targetPath);
 
-  return getPosixFilePath(filePath).startsWith(
-    getPosixFilePath(absolutePathToStrictFiles) + path.posix.sep,
+  const posixFilePath = getPosixFilePath(filePath);
+  const posixStrictPath = getPosixFilePath(absolutePathToStrictFiles);
+  return (
+    posixFilePath === posixStrictPath || posixFilePath.startsWith(posixStrictPath + path.posix.sep)
   );
 }
