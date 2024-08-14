@@ -15,7 +15,7 @@ describe('utils', () => {
     it('should return undefined if --project not present in path', () => {
       process.argv = [
         '/usr/bin/nodejs/18.7.0/bin/node',
-        '/home/neenjaw/typescript-strict-plugin/node_modules/.bin/update-strict-comments',
+        '/home/neenjaw/tsc-strict/node_modules/.bin/update-strict-comments',
       ];
 
       expect(getProjectPathFromArgs()).toEqual(undefined);
@@ -24,7 +24,7 @@ describe('utils', () => {
     it('should return undefined if --project not present in path', () => {
       process.argv = [
         '/usr/bin/nodejs/18.7.0/bin/node',
-        '/home/neenjaw/typescript-strict-plugin/node_modules/.bin/update-strict-comments',
+        '/home/neenjaw/tsc-strict/node_modules/.bin/update-strict-comments',
         '--project',
         './some/inner/project/tsconfig.json',
       ];

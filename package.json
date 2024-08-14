@@ -1,6 +1,6 @@
 {
   "name": "tsc-strict",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "description": "Typescript tools that help with migration to the strict mode",
   "author": "floklein",
   "contributors": [],
@@ -10,11 +10,11 @@
     "TypeScript Language Service"
   ],
   "bugs": {
-    "url": "https://github.com/floklein/typescript-strict-plugin/issues"
+    "url": "https://github.com/floklein/tsc-strict/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/floklein/typescript-strict-plugin.git"
+    "url": "git+https://github.com/floklein/tsc-strict.git"
   },
   "license": "MIT",
   "bin": {
@@ -71,7 +71,7 @@
     "ts-jest": "^29.1.2",
     "ts-node": "10.4.0",
     "typescript": "^5.4.5",
-    "typescript-strict-plugin": "file:./",
+    "tsc-strict": "file:./",
     "which-module": "^2.0.0"
   },
   "lint-staged": {
@@ -85,5 +85,5 @@
       "pre-commit": "lint-staged"
     }
   },
-  "homepage": "https://github.com/floklein/typescript-strict-plugin#readme"
+  "homepage": "https://github.com/floklein/tsc-strict#readme"
 }

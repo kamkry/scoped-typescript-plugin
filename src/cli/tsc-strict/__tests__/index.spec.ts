@@ -36,7 +36,7 @@ describe('tsc-strict root', () => {
 
     // then
     expect(console.log).toHaveBeenCalledWith(
-      expect.stringMatching(/typescript-strict-plugin isn't configured in tsconfig.json/i),
+      expect.stringMatching(/tsc-strict isn't configured in tsconfig.json/i),
     );
     expect(process.exit).toHaveBeenCalledWith(1);
   });
