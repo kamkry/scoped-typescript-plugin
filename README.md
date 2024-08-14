@@ -4,7 +4,7 @@ Typescript plugin that allows turning on strict mode in specific files or direct
 
 ## Do I need this plugin?
 
-`typescript-strict-plugin` was created mainly for existing projects that want to incorporate
+`tsc-strict` was created mainly for existing projects that want to incorporate
 typescript strict mode, but project is so big that refactoring everything would take ages.
 
 Our plugin allows adding strict mode to a TypeScript project without fixing all the errors at once.
@@ -24,13 +24,13 @@ files. Therefore, we have strict errors inside our files and during build time.
 Use `npm`:
 
 ```bash
-npm i --save-dev typescript-strict-plugin
+npm i --save-dev tsc-strict
 ```
 
 or yarn
 
 ```bash
-yarn add -D typescript-strict-plugin
+yarn add -D tsc-strict
 ```
 
 add plugin to your `tsconfig.json`:
@@ -42,7 +42,7 @@ add plugin to your `tsconfig.json`:
    "strict": false,
    "plugins": [
     {
-     "name": "typescript-strict-plugin"
+     "name": "tsc-strict"
     }
    ]
  }
@@ -73,7 +73,7 @@ ignored paths you can insert `//@ts-strict` comment.
     "strict": false,
     "plugins": [
       {
-        "name": "typescript-strict-plugin",
+        "name": "tsc-strict",
         "paths": [
           "./src",
           "/absolute/path/to/source/"
